@@ -1,0 +1,85 @@
+body {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;  
+}
+.chat {
+    position: relative;
+    max-width: 100%;
+    min-width: 300px;
+    width: 80%;
+}
+.input_block {
+    width: 100%;
+    height: 35px;
+    display: flex;
+}
+.input {
+    text-align: center;    
+    flex-grow: 1;
+    border: 2px solid #5facfa;
+    font-size: 16px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #dfebf7;
+    border-radius: 5px;    
+}
+.input:focus, textarea:focus {
+    outline: none
+}
+.btn {
+    width: 100px;
+    height: 100%;
+    margin-left: 5px;
+    color: #ebf0f5;
+    background-color: #5facfa;
+    border-radius: 5px;
+    border: 0;
+    transition: 0.25s
+}
+.btn:hover {
+    background-color: #e5fa5f;
+    color: #fff;
+    transform: scale(1.05);
+}
+.history {
+    min-height: 500px;    
+    border-radius: 5px;
+    border: 2px solid #5facfa;
+    background-color: #dfebf7;    
+    margin-top: 10px;
+    position: relative;   
+}
+.client {
+    display: flex;
+    justify-content: end;
+    text-align: end;
+}
+.server {
+    display: flex;
+    justify-content: start;
+}
+.msg {
+    margin: 5px 20px;
+    padding: 10px;
+    max-width: 200px;
+    border: 2px solid #5facfa;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.connect,
+.disconnect,
+.connect_error {
+    text-align: center;
+    color: #050000;
+    font-family: sans-serif;
+    font-size: 14px
+}
+.disconnect {
+    color: #9c9797;
+}
+.connect_error {
+    color: #ff0000;
+}
